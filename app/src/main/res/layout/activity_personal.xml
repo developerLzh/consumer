@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary">
+
+        <ImageView
+                style="@style/back_icon_style"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+
+        <ImageView
+                android:id="@+id/photo"
+                android:layout_centerHorizontal="true"
+                android:layout_width="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_account_circle_black_48dp"/>
+
+        <TextView
+                android:id="@+id/photo_hint"
+                android:layout_below="@+id/photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击修改头像"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"/>
+
+        <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveLoadingView"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                app:wlv_progressValue="60"
+                app:wlv_shapeType="rectangle"
+                app:wlv_triangle_direction="south"
+                app:wlv_waveAmplitude="80"
+                app:wlv_wave_background_Color="@color/colorPrimary"
+                app:wlv_waveColor="@color/bg_color"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/name_con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/cus_name"
+                style="@style/persoal_txt_style"
+                android:text="Yuangee"/>
+
+        <ImageView
+                style="@style/persoal_right_icon_style"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/vip_con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/cus_vip"
+                android:text="Vip"
+                style="@style/persoal_txt_style"/>
+
+        <ImageView
+                style="@style/persoal_right_icon_style"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/gender_con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/cus_gender"
+                android:text="男"
+                style="@style/persoal_txt_style"/>
+
+        <ImageView
+                style="@style/persoal_right_icon_style"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/age_con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/cus_age"
+                android:text="24岁"
+                style="@style/persoal_txt_style"/>
+
+        <ImageView
+                style="@style/persoal_right_icon_style"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
